@@ -46,7 +46,7 @@ module traffic(X,clock,clear,C,H);
         if(clear)
             state <= S0;
         else
-            state = next_state;
+            state <= next_state;
     
     always @ (state)
     begin
